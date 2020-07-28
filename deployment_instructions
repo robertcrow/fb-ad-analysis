@@ -1,0 +1,8 @@
+# generating distribution guideline
+python3 setup.py sdist bdist_wheel
+
+# uploading to testpypi using twine
+python3 -m twine upload --repository testpypi dist/*
+
+# dist can be found at:
+https://test.pypi.org/project/fb-ad-analysis/0.0.1://test.pypi.org/project/fb-ad-analysis/0.0.1/
