@@ -1,7 +1,0 @@
-README.md
-setup.py
-fb_ad_analysis/__init__.py
-fb_ad_analysis.egg-info/PKG-INFO
-fb_ad_analysis.egg-info/SOURCES.txt
-fb_ad_analysis.egg-info/dependency_links.txt
-fb_ad_analysis.egg-info/top_level.txt

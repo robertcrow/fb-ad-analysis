@@ -12,7 +12,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/robertcrow/fb_ad_analysis",
-    packages=setuptools.find_packages(),
+    packages=['fb_ad_analysis', 'fb_ad_analysis.api'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
