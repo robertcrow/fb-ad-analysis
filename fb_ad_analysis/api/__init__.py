@@ -1,2 +1,4 @@
-from .test1 import test1
-from .test2 import test2
+from .connectToAPI import connectToAPI
+from .queryAPI import queryAPI
+from .fetchAds import fetchAds
+from .cleanData import cleanData

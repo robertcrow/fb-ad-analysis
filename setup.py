@@ -13,6 +13,16 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/robertcrow/fb_ad_analysis",
     packages=['fb_ad_analysis', 'fb_ad_analysis.api'],
+    install_requires=[
+          'facebook-sdk',
+          'numpy', 
+          'pandas',
+          'seaborn',
+          'requests', 
+          'sortedcollections', 
+          'csv-reader',
+          'datetime'
+      ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
