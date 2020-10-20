@@ -1,7 +1,7 @@
 from fb_ad_analysis.fetch import query_api_by_page_id, parse_demographic_data
 import pandas as pd
 
-def fetch_ads(token, search_phrases, filename=None, ad_time_start=None, ad_time_end=None):
+def fetch_ads(token, search_phrases, filename, ad_time_start=None, time_end=None):
     data = []
     for search_phrase in search_phrases:
         query_output = query_api_by_page_id(token, search_phrase, ad_time_start=ad_time_start)

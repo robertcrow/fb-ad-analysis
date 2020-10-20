@@ -4,10 +4,7 @@ import csv
 import pandas as pd
 import datetime
 
-def queryAPI(token, phrase, ad_time_start=None, ad_time_end=None):
-    if ad_time_start == None:
-        ad_time_start = "2019-08-06T00:00:00+0200"
-        ad_time_end = "2019-12-12T00:00:00+0200"
+def query_api(token, phrase, ad_time_start="2019-08-06T00:00:00+0200", ad_time_end="2019-12-12T00:00:00+0200"):
     
     posts = requests.get("https://graph.facebook.com/v2.11/ads_archive?"
                          #"search_terms=" + str(phrase) +

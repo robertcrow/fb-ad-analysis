@@ -1,0 +1,14 @@
+README.md
+setup.py
+fb_ad_analysis/__init__.py
+fb_ad_analysis.egg-info/PKG-INFO
+fb_ad_analysis.egg-info/SOURCES.txt
+fb_ad_analysis.egg-info/dependency_links.txt
+fb_ad_analysis.egg-info/requires.txt
+fb_ad_analysis.egg-info/top_level.txt
+fb_ad_analysis/fetch/__init__.py
+fb_ad_analysis/fetch/connect_to_api.py
+fb_ad_analysis/fetch/fetch_ads.py
+fb_ad_analysis/fetch/parse_demographic_data.py
+fb_ad_analysis/fetch/query_api_by_page_id.py
+fb_ad_analysis/fetch/query_api_by_phrase.py

@@ -1,0 +1,8 @@
+facebook-sdk
+numpy
+pandas
+seaborn
+requests
+sortedcollections
+csv-reader
+datetime

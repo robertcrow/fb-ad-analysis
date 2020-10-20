@@ -4,21 +4,21 @@ import csv
 import pandas as pd
 import datetime
 
-def cleanData(data):
+def parse_demographic_data(data):
 
-    tmp = {'male': {}, 'female': {}, 'unknown': {}}
+    entry = {'male': {}, 'female': {}, 'unknown': {}}
 
     for x in data:
         try:
             x['demographic_distribution']
 
             for y in x['demographic_distribution']:
-                tmp[y['gender']][y['age']] = float(y['percentage'])
+                entry[y['gender']][y['age']] = float(y['percentage'])
 
             for key in tmp:
-                tmp[key] = collections.OrderedDict(sorted(tmp[key].items(), key=lambda t: t[0]))
+                entry[key] = collections.OrderedDict(sorted(entry[key].items(), key=lambda t: t[0]))
 
-            x['demographic_distribution'] = tmp
+            x['demographic_distribution'] = entry
 
         except:
             print("demographic distribution not available")
