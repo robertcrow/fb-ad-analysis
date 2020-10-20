@@ -1,10 +1,10 @@
 from fb_ad_analysis.fetch import connect_to_api, fetch_ads
 
-token = "EAAGaLEBcXCcBAPfA6GMAxMntqPP7HOaXVJoKgjIznmUq51ZCipY23iWEzJiqyzMcikaoClZBSamsosfx8aiS4pBPn2gZAaJWZB3aeLvxzW6tySocvZCauML0BhdgzUQSkpOFOjBH9GyZAIP3wzmKYBe4LZBwlyeF7p1oKNXiX4PBlDvB8K0of7I"
+token = "EAAGr0hQ1MZCcBAMpPYJ6KFZBfQ0NucsI2hPodPRYRtnZAZBNfzNoGADwuo8mywZA6teXOsiRFAiuS9ZCX7NLaAsx5R9nCbRBzYdOpC6RA6aLiUTC4jNapi9Ra7bBQ7er4oKZCXeUjC5s6yJi5xojbKZBmWQgTahQM2qI09XHcrGYRBJ9qebCi5du"
 api = connect_to_api(token, version="7.0")
 
 # test params
-phrases = "Conservatives"
+phrases = ["8807334278"]
 ad_time_start="2019-11-06T00:00:00+0000"
 ad_time_end="2019-12-13T00:00:00+0000"
 
@@ -23,4 +23,5 @@ ad_time_end="2019-12-13T00:00:00+0000"
 #         advertisers = list(report_data['Page ID'])
 
 
-database = fetch_ads(token, phrases, ad_time_start="2019-11-06T00:00:00+0000", ad_time_end="2019-12-13T00:00:00+0000")
+data = fetch_ads(token, phrases, ad_time_start="2019-11-06T00:00:00+0000", ad_time_end="2019-12-13T00:00:00+0000")
+print(data)

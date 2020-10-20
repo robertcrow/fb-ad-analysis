@@ -7,7 +7,7 @@ import datetime
 def query_api_by_phrase(token, phrase, ad_time_start="2019-08-06T00:00:00+0200", ad_time_end="2019-12-12T00:00:00+0200"):
     
     posts = requests.get("https://graph.facebook.com/v2.11/ads_archive?"
-                         #"search_terms=" + str(phrase) +
+                        #  "search_terms=" + str(phrase) +
                          "search_page_ids=" + str(phrase) +
                          "&limit=50&fields=page_id,page_name,ad_snapshot_url,ad_creative_body,ad_delivery_start_time,ad_delivery_stop_time,\
                          impressions,demographic_distribution,funding_entity,currency,spend" +
