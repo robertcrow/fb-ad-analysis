@@ -28,6 +28,7 @@ def query_api_by_page_id(token, phrase, ad_time_start="2019-08-06T00:00:00+0200"
                 next_url = response_json['paging']['next']
                 response_json = requests.get(next_url).json()
                 ad_data.extend(response_json['data'])
+                not_fully_parsed = False
             except:
                 not_fully_parsed = False
 

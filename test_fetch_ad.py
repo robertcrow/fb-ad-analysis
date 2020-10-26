@@ -1,5 +1,6 @@
 from fb_ad_analysis.fetch import connect_to_api, fetch_ads
 
+
 token = "EAAGr0hQ1MZCcBAMpPYJ6KFZBfQ0NucsI2hPodPRYRtnZAZBNfzNoGADwuo8mywZA6teXOsiRFAiuS9ZCX7NLaAsx5R9nCbRBzYdOpC6RA6aLiUTC4jNapi9Ra7bBQ7er4oKZCXeUjC5s6yJi5xojbKZBmWQgTahQM2qI09XHcrGYRBJ9qebCi5du"
 api = connect_to_api(token, version="7.0")
 
